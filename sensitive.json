@@ -1,0 +1,77 @@
+{
+  "flags": "-iE",
+  "languages": {
+    "javascript": {
+      "patterns": [
+        "aws_(access|secret)_key",
+        "api_key",
+        "passwd",
+        "pwd",
+        "(heroku|slack|firebase|swagger|config|admin|json|gcp|smtp)_(token|key)?",
+        "(access|secret|oauth_(?:token|token_secret))",
+        "(db|sql|jdbc|ftp_password|ssh_key|.git|access_key|env|htaccess) ",
+        "(client|project|bearer|api|monitoring)_?(secret|id|key) ",
+        "(private|encryption|decrypt|token|key|pass|secret|credentials)_(key|file|phrase)?",
+        "(basic|bearer|consumer|session|jwt|refresh)_(token|key)?",
+        "(cloud|storage|database|service|account)_?(key|id|name|access)?",
+        "(username|user|login|email|password|pass)_(name|hash|file)?",
+        "(2fa|mfa|auth|authentication)_(code|token|key)?",
+        "(certificate|private_key|ssl|tls|pkey|ssh)_(file|key)?",
+        "(google|facebook|twitter|linkedin|github|microsoft)_(id|key|token|secret)?",
+      ]
+    },
+    "php": {
+      "patterns": [
+        "(mysql_(?:user|password|database)|db_(user|password|database)|",
+        "(redis|memcached|dsn)_(user|password)?|",
+        "(env|config|credentials)_(file|key|secret)?|",
+        "(api|bearer|access|secret|token|key|pass)_(key|file|phrase)?",
+        "(username|user|login|email|password)_(name|hash|file)?",
+        "(2fa|mfa|auth|authentication)_(code|token|key)?",
+        "(private|encryption|decrypt|token|key|pass|secret|credentials)_(key|file|phrase)?",
+        "(basic|bearer|consumer|session|jwt|refresh)_(token|key)?",
+        "(cloud|storage|database|service|account)_?(key|id|name|access)?",
+        "(certificate|private_key|ssl|tls|pkey|ssh)_(file|key)?",
+        "(google|facebook|twitter|linkedin|github|microsoft)_(id|key|token|secret)?"
+      ]
+    },
+    "spring_boot": {
+      "patterns": [
+        "spring/.datasource/.username",
+        "spring/.datasource/.password",
+        "spring/.jpa/.database-platform",
+        "(hibernate|jndi)_(?:username|password)?",
+        "(application/.properties|application/.yml|bootstrap/.yml)_(?:file|key|secret)?",
+        "(api|bearer|access|secret|token|key|pass)_(?:key|file|phrase)?",
+        "(username|user|login|email|password)_(?:name|hash|file)?",
+        "(2fa|mfa|auth|authentication)_(?:code|token|key)?",
+        "(private|encryption|decrypt|token|key|pass|secret|credentials)_(?:key|file|phrase)?",
+        "(basic|bearer|consumer|session|jwt|refresh)_(?:token|key)?",
+        "(cloud|storage|database|service|account)_?(?:key|id|name|access)?",
+        "(certificate|private_key|ssl|tls|pkey|ssh)_(?:file|key)?",
+        "(google|facebook|twitter|linkedin|github|microsoft)_(?:id|key|token|secret)?"
+      ]
+    },
+    "wordpress": {
+      "patterns": [
+        "DB_USER",
+        "DB_PASSWORD",
+        "DB_NAME",
+        "AUTH_KEY",
+        "SALT",
+        "SECRET_KEY",
+        "wp-config/.php",
+        "wp-content/themes/.*/.php",
+        "wp-content/plugins/.*/.php_(file|key|secret)?",
+        "api|bearer|access|secret|token|key|pass_(key|file|phrase)?",
+        "username|user|login|email|password_(name|hash|file)?",
+        "2fa|mfa|auth|authentication_(code|token|key)?",
+        "private|encryption|decrypt|token|key|pass|secret|credentials_(key|file|phrase)?",
+        "basic|bearer|consumer|session|jwt|refresh_(token|key)?",
+        "cloud|storage|database|service|account_(key|id|name|access)?",
+        "certificate|private_key|ssl|tls|pkey|ssh_(file|key)?",
+        "google|facebook|twitter|linkedin|github|microsoft_(id|key|token|secret)?"
+      ]
+    }
+  }
+}
